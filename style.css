@@ -1,0 +1,8 @@
+body{
+    background-color: aliceblue;
+}
+.container{
+    width: 500px;
+    height: auto;
+    margin: 260px auto;
+}
