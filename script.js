@@ -8,7 +8,7 @@ document.getElementById('Submit').addEventListener('click', function(e) {
     if (height.trim() || weight.trim()) {
         // console.log(height)
         height = height /100;
-        let bmi = weight / (height * height);
+        let bmi = (weight / (height * height)).toFixed(2);
 
         console.log(bmi)
     }
