@@ -6,7 +6,11 @@ document.getElementById('Submit').addEventListener('click', function(e) {
 
 
     if (height.trim() || weight.trim()) {
-        console.log(height)
+        // console.log(height)
+        height = height /100;
+        let bmi = weight / (height * height);
+
+        console.log(bmi)
     }
     else{
         alert('fill all the fields')
