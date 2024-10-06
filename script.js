@@ -10,7 +10,20 @@ document.getElementById('Submit').addEventListener('click', function(e) {
         height = height /100;
         let bmi = (weight / (height * height)).toFixed(2);
 
-        console.log(bmi)
+        // console.log(bmi)
+        let resultText;
+
+    if (bmi < 18.5) {
+        resultText = `Your BMI is ${bmi} (Underweight)`;
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
+        resultText = `Your BMI is ${bmi} (Normal weight)`;
+    } else if (bmi >= 25 && bmi <= 29.9) {
+        resultText = `Your BMI is ${bmi} (Overweight)`;
+    } else {
+        resultText = `Your BMI is ${bmi} (Obesity)`;
+    }
+
+    document.getElementById('result').textContent = resultText;
     }
     else{
         alert('fill all the fields')
