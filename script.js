@@ -5,7 +5,7 @@ document.getElementById('Submit').addEventListener('click', function(e) {
     let weight = document.getElementById('weight').value;
 
 
-    if (height.trim() || weight.trim()) {
+    if (height.trim() && weight.trim() &&height>0 && weight>0) {
         // console.log(height)
         height = height /100;
         let bmi = (weight / (height * height)).toFixed(2);
