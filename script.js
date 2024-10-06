@@ -24,7 +24,10 @@ document.getElementById('Submit').addEventListener('click', function(e) {
     }
 
     document.getElementById('result').textContent = resultText;
+    document.getElementById('height').value = '';
+    document.getElementById('weight').value = ''
     }
+
     else{
         alert('fill all the fields')
     }
